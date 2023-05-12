@@ -127,7 +127,8 @@
   }
 
   /* project-academy */
-  .project-academy .content-main-img{
+  .project-academy .content-main-img,
+  .project-academy .content-img .item{
     width: 100%;
   }
 
@@ -147,5 +148,14 @@
 @media all and (min-width: 767px){
   .mobile{
     display: none;
+  }
+}
+
+@media all and (min-width: 520px){
+  h1.title{
+    font-size: 40px;
+  }
+  .container{
+    padding: 0 40px;
   }
 }

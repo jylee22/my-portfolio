@@ -6,7 +6,6 @@ for(let i = 0; i < tabLink.length; i++) {
   tabLink[i].addEventListener("click", function(e){
     e.preventDefault();
     let linkTarget = e.target.getAttribute("href");
-    console.log(linkTarget);
 
     const tabTarget = linkTarget.replace("#", "");
 

@@ -17,7 +17,6 @@ window.onload = function() {
     });
 
     window.addEventListener("scroll", function(){
-      console.log(window.scrollY);
       for(let x = 0; x < navItemEl.length; x++){
         if(window.scrollY >= 0){
           goHome.classList.add('active');

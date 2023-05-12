@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@media all and (max-width: 1400px){
+  .container{
+    width: 100%;
+    padding: 0 60px;
+  }
+
+  /* content */
+  .education, .career, .activity, .certificate{
+    width: 100%;
+  }
+  .profile > li{
+    flex: 0 0 100% !important;
+  }
+  .education .list span {
+    flex: 100%;
+  }
+  .profile .content .item{
+    justify-content: space-between;
+  }
+  .skill .content{
+    flex-wrap: wrap;
+  }
+
+  /* detail */
+  .detail-component .container{
+    padding: 0;
+  }
+  .detail .content-img img{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1200px){
+  /* project-company */
+  .project-company .item{
+    flex-direction: column;
+    padding: 10px;
+  }
+  .project-company .item span:first-child,
+  .project-company .item span:nth-child(2),
+  .project-company .item span:nth-child(3),
+  .project-company .item span:last-child{
+    flex: 1;
+  }
+  .project-company .item span:first-child{
+    font-weight: 500;
+  }
+  .project-company .item span{
+    padding: 5px 10px;
+    text-align: center !important;
+  }
+
+  /* project-academy */
+  .project-academy .content-sub-body{
+    flex-direction: column;
+  }
+  .project-academy .content-img{
+    flex-wrap: wrap;
+  }
+  .project-academy .content-img .item{
+    width: 300px;
+    margin: 20px auto;
+  }
+  .project-academy .content-sub-img{
+    padding: 0 20px;
+  }
+}
+
+@media all and (max-width: 969px){
+  /* content */
+  .about-me .content .content-body .content-img{
+    text-align: center;
+  }
+  .about-me .content:first-child{
+    flex: 0 0 100%;
+  }
+  .about-me .content:last-child {
+    flex: 0 0 100%;
+    margin-top: 60px;
+  }
+
+  /* project-free */
+  .project-free .item{
+    flex: 0 0 100%;
+  }
+
+  /* footer */
+  .footer h1 {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+}
+
+@media all and (max-width: 767px){
+  h1.title{
+    font-size: 60px;
+  }
+  
+    /*  */
+    .profile .item span:first-child,
+    .profile .item span:nth-child(2),
+    .profile .item span:last-child{
+      flex: 1;
+    }
+    .profile .item span:first-child{
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .profile .item span{
+      text-align: left !important;
+    }
+
+  /* about-me */
+  .about-me .item span:first-child{
+    font-size: 24px;
+  }
+
+  /* education */
+  .education .content .item,
+  .career .content .item,
+  .activity .content .item,
+  .certificate .content .item{
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  /* project-academy */
+  .project-academy .content-main-img{
+    width: 100%;
+  }
+
+  /* footer */
+  .footer h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .footer h3 {
+    font-size: 22px;
+  }
+  .footer b{
+    font-size: 26px;
+  }
+}
+
+@media all and (min-width: 767px){
+  .mobile{
+    display: none;
+  }
+}

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JI YUN LEE PORTFOLIO</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Racing+Sans+One&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="icon" href="./favicon.svg">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <!-- lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script defer src="./js/event.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header id="header" class="header-component">
+      <div class="header-content">
+        <div class="header">
+          <a href=".././">
+            <h1 class="logo">JI YUN LEE PORTFOLIO</h1>
+          </a>
+          <div class="menu">
+            <span class="icon material-symbols-outlined">menu</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <section id="main" class="main-component">
+      <div class="main-content">
+        <div class="main">
+          <h1 class="title">JI YUN LEE</h1>
+          <h1 class="title">PORTFOLIO</h1>
+        </div>
+      </div>
+
+      <nav>
+        <div class="close">
+          <span class="icon material-symbols-outlined">close</span>
+        </div>
+        <ul>
+          <li class="nav-item">
+            <a href="javascript:void(0)" id="toHome" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" id="toProfile" class="nav-link">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" id="toSkill" class="nav-link">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" id="toProject" class="nav-link">Project</a>
+          </li>
+        </ul>
+        <div class="text">
+          <small>ⓒCopyright 2023 JI YUN LEE PORTFOLIO</small>
+        </div>
+      </nav>
+    </section>
+    <!-- main -->
+
+    <!-- profile -->
+    <section id="profile" class="profile-component component">
+      <div class="profile-content">
+        <div class="container">
+          <ul class="profile">
+            <li class="about-me event delay-1">
+              <div class="content">
+                <div class="content-body">
+                  <div class="content-img">
+                    <img src="./images/profile_01.jpg" alt="프로필 사진">
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="content-header">
+                  <h2 class="title">About Me</h2>
+                  <h3 class="title"><b>새로운 도전</b>과 <b>경험</b>을 중시하는 <b>이지윤</b>입니다.</h3>
+                </div>
+                <div class="content-body">
+                  <ul>
+                    <li class="item">
+                      <span class="material-symbols-outlined">person</span>
+                      <span>이지윤  |  JiYun Lee</span>
+                    </li>
+                    <li class="item">
+                      <span class="icon material-symbols-outlined">calendar_today</span>
+                      <span>96.04.08</span>
+                    </li>
+                    <li class="item">
+                      <span class="icon material-symbols-outlined">mail</span>
+                      <span>jylee22.96@gmail.com</span>
+                    </li>
+                    <li class="item">
+                      <span class="icon material-symbols-outlined">smartphone</span>
+                      <span>010-3336-7650</span>
+                    </li>
+                    <li class="item">
+                      <span class="icon material-symbols-outlined">attach_file</span>
+                      <span><a href="https://github.com/jylee22" target="_blank">https://github.com/jylee22</a></span>
+                    </li>
+                    <li class="item">
+                      <span class="icon material-symbols-outlined">attach_file</span>
+                      <span><a href="https://jylee22.tistory.com/" target="_blank">https://jylee22.tistory.com</a></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="education event delay-2">
+              <div class="content">
+                <div class="content-header">
+                  <h2 class="title">Education</h2>
+                </div>
+                <div class="content-body">
+                  <ul>
+                    <li class="item">
+                      <span>2019</span>
+                      <span>경남정보대학교</span>
+                      <span>컴퓨터정보공학과</span>
+                    </li>
+                    <li class="item">
+                      <span>2017</span>
+                      <span>경남정보대학교</span>
+                      <span>컴퓨터정보전공</span>
+                    </li>
+                    <li class="item">
+                      <span>2015</span>
+                      <span>해운대관광고등학교</span>
+                      <span>관광외국어과</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="career event delay-3">
+              <div class="content">
+                <div class="content-header">
+                  <h2 class="title">Career</h2>
+                </div>
+                <div class="content-body">
+                  <ul>
+                    <li class="item">
+                      <span>2018 - 2022</span>
+                      <span>(주)아이오코드</span>
+                      <span>WebDesigner & Publisher</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="activity event delay-4">
+              <div class="content">
+                <div class="content-header">
+                  <h2 class="title">Activity</h2>
+                </div>
+                <div class="content-body">
+                  <ul>
+                    <li class="item">
+                      <span>2022 - 2023</span>
+                      <span>그린컴퓨터아케데미 부산</span>
+                      <span>자바 파이썬을 활용한 머신러닝 SW개발자 과정</span>
+                    </li>
+                    <li class="item">
+                      <span>2018</span>
+                      <span>부산디자인센터</span>
+                      <span>프론트엔드 웹디자인 전문가 양성과정</span>
+                    </li>
+                    <li class="item">
+                      <span>2017 - 2018</span>
+                      <span>경남정보대학교</span>
+                      <span>근로장학생 (교내 취업처)</span>
+                    </li>
+                    <li class="item">
+                      <span>2017</span>
+                      <span>씨에스원</span>
+                      <span>LGU+ 콜센터</span>
+                    </li>
+                    <li class="item">
+                      <span>2017</span>
+                      <span>해운대 약국</span>
+                      <span>약사 보조</span>
+                    </li>
+                    <li class="item">
+                      <span>2012 - 2014</span>
+                      <span>해운대관광고등학교</span>
+                      <span> 선도 및 학생회 활동</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="certificate event delay-5">
+              <div class="content">
+                <div class="content-header">
+                  <h2 class="title">Certificate</h2>
+                </div>
+                <div class="content-body">
+                  <ul>
+                    <li class="item">
+                      <span>2023</span>
+                      <span>정보처리기사 (필기합격)</span>
+                    </li>
+                    <li class="item">
+                      <span>2022</span>
+                      <span>2종보통운전면허(오토)</span>
+                    </li>
+                    <li class="item">
+                      <span>2021</span>
+                      <span>웹디자인기능사</span>
+                    </li>
+                    <li class="item">
+                      <span>2014</span>
+                      <span>그래픽기술자격(GTQ) 1급</span>
+                    </li>
+                    <li class="item">
+                      <span>2014</span>
+                      <span>전상회계운용사 3급</span>
+                    </li>
+                    <li class="item">
+                      <span>2013</span>
+                      <span>컴퓨터활용능력 2급</span>
+                    </li>
+                    <li class="item">
+                      <span>2012</span>
+                      <span>정보기술자격(ITQ) 아래한글 A 등급</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- profile -->
+
+    <!-- skill -->
+    <section id="skill" class="skill-component component">
+      <div class="skill-content">
+        <div class="container">
+          <div class="content-header">
+            <h2 class="title">Skill</h2>
+            <p class="sub-title">사용할 줄 알거나 사용해 본 적이 있는 기술들입니다.</p>
+          </div>
+          <ul class="skill">
+            <li class="front event delay-1">
+              <div class="content">
+                <div class="content-header">
+                  <h3 class="title">Frontend</h3>
+                </div>
+                <div class="content-body">
+                  <ul class="content-img">
+                    <li>
+                      <img class="skill-img" src="./images/logo/html_logo.png" alt="html" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/css_logo.png" alt="css" style="height: 100px; width: auto;"  />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/sass_logo.png" alt="sass" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/js_logo.png" alt="js" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/jquery_logo.png" alt="jquery" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/bootstrap_logo.png" alt="bootstrap" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/vue_logo.png" alt="vue" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/react_logo.png" alt="react" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="back event delay-2">
+              <div class="content">
+                <div class="content-header">
+                  <h3 class="title">Backend</h3>
+                </div>
+                <div class="content-body">
+                  <ul class="content-img">
+                    <li>
+                      <img class="skill-img" src="./images/logo/oracle_logo.png" alt="oracle"  style="width: 200px;" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/mariadb_logo.png" alt="mariadb" style="width: 200px;" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/spring_logo.png" alt="spring" style="width: 200px;" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/java_logo.png" alt="java" style="height: 140px; width: auto;" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/python_logo.png" alt="python" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="design event delay-3">
+              <div class="content">
+                <div class="content-header">
+                  <h3 class="title">Design</h3>
+                </div>
+                <div class="content-body">
+                  <ul class="content-img">
+                    <li>
+                      <img class="skill-img" src="./images/logo/photoshop_logo.png" alt="photoshop" style="width: 80px;" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/illustrator_logo.png" alt="illustrator" style="width: 80px;" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/xd_logo.png" alt="xd" style="width: 80px;" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="coumm event delay-4">
+              <div class="content">
+                <div class="content-header">
+                  <h3 class="title">Collaboration</h3>
+                </div>
+                <div class="content-body">
+                  <ul class="content-img">
+                    <li>
+                      <img class="skill-img" src="./images/logo/zeplin_logo.svg" alt="zeplin" style="width: 80px;" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/figma_logo.png" alt="figma" style="height: 80px; width: auto;" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            
+            <li class="vc event delay-5">
+              <div class="content">
+                <div class="content-header">
+                  <h3 class="title">Version Control</h3>
+                </div>
+                <div class="content-body">
+                  <ul class="content-img">
+                    <li>
+                      <img class="skill-img" src="./images/logo/git_logo.png" alt="git" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/github_logo.png" alt="github" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="editor event delay-6">
+              <div class="content">
+                <div class="content-header">
+                  <h3 class="title">Editor</h3>
+                </div>
+                <div class="content-body">
+                  <ul class="content-img">
+                    <li>
+                      <img class="skill-img" src="./images/logo/word_logo.png" alt="word" style="width: 80px;" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/powerpoint_logo.png" alt="powerpoint" style="width: 80px;" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/excel_logo.png" alt="excel" style="width: 80px;" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/visual_studio_code_logo.png" alt="visual_studio_code" style="width: 80px;" />
+                    </li>
+                    <li>
+                      <img class="skill-img" src="./images/logo/eclipse_logo.png" alt="eclipse" style="width: 200px;" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- skill -->
+
+    <!-- project -->
+    <section id="project" class="project-component component">
+      <div class="project-content">
+        <div class="container">
+          <div class="project">
+            <div class="content">
+              <div class="content-header">
+                <h2 class="title">Project - Company</h2>
+                <p class="sub-title">4년간 회사에서 근무하면서 작업했던 프로젝트 기록들 입니다.</p>
+              </div>
+              <div class="content-body">
+                <ul class="project-company">
+                  <li class="item event delay-1">
+                    <span>프로젝트</span>
+                    <span>연계 / 소속</span>
+                    <span>기간</span>
+                    <span>주요 역할</span>
+                  </li>
+                  <li class="item event delay-2">
+                    <span>부산광역시 권역별 건강정보통계 분석 시스템</span>
+                    <span>(주)아이오코드</span>
+                    <span>2018.08 - 2018.12 (약 5개월 소요)</span>
+                    <span>UI/UX 디자인 및 퍼블리싱</span>
+                  </li>
+                  <li class="item event delay-3">
+                    <span>선박 원격 통합 모니터링 시스템</span>
+                    <span>(주)아이오코드</span>
+                    <span>2019.03 - 2019.05 (약 3개월 소요)</span>
+                    <span>UI/UX 디자인 및 퍼블리싱, 그래픽 및 아이콘 제작</span>
+                  </li>
+                  <li class="item event delay-4">
+                    <span>센트랄 프로세스 마이닝 시스템</span>
+                    <span>(주)아이오코드</span>
+                    <span>2020.01 - 2021.02 (약 12개월 소요)</span>
+                    <span>UI/UX 디자인 및 퍼블리싱, 아이콘 제작</span>
+                  </li>
+                  <li class="item event delay-5">
+                    <span>지능형 IoT 항만 마이닝 시스템</span>
+                    <span>(주)아이오코드</span>
+                    <span>2021.02 ~ 2021.07 (약 6개월 소요)</span>
+                    <span>웹 퍼블리싱 및 아이콘 제작</span>
+                  </li>
+                  <li class="item event delay-6">
+                    <span>IOChord Process Re-Engineering</span>
+                    <span>(주)아이오코드</span>
+                    <span>2019 - 2022</span>
+                    <span>UI/UX 디자인 및 퍼블리싱, 아이콘 제작</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="content">
+              <div class="content-header">
+                <h2 class="title">Project - Academy</h2>
+                <p class="sub-title">자바 파이썬을 활용한 머신러닝 SW개발자 과정에서 제작된 팀프로젝트 결과물입니다.</p>
+              </div>
+              <div class="content-body">
+                <ul class="project-academy">
+                  <li class="item event delay-1">
+                    <div class="content-sub-header">
+                      <h2 class="sub-title">냉장고 요정 미미 : 메뉴 추천 및 레시피</h2>
+                    </div>
+                    <div class="content-sub-body">
+                      <div class="content-img content-main-img">
+                        <img src="./images/prj/prj_07.jpg" alt="냉장고 요정 미미 : 메뉴 추천 및 레시피">
+                        <a href="./detail/projectMiMi.html" class="more">
+                          <p>상세보기</p>
+                        </a>
+                      </div>
+
+                      <div class="content-text">
+                        <h4>기획 계기</h4>
+                        <p> “오늘 뭐 먹지?” 식사 메뉴를 선정하는 것에 대해 많은 고민을 가지고 있습니다. 그리고 날씨와 시간에 따라 먹고 싶은 메뉴가 변하기도 하고 배달 음식도 질릴 때가 있을 겁니다. 집에 있는 재료로 식사 메뉴를 추천해주는 프로그램이 있으면 어떨까?
+                          집에 있는 냉장고 속 재료로 메뉴를 추천해 레시피를 알려주고 맛있는 한 끼와 메뉴 고민을 단 한번에 해결을 위해 기획했습니다.</p>
+                        <h4>소요 기간</h4>
+                        <p>2022.12 ~ 2023.01 (약 2개월 소요)</p>
+                        <h4>주요 역할</h4>
+                        <p>총괄 / 기획 / 디자인 / 프론트</p>
+                      </div>
+
+                      <div class="content-sub-img">
+                        <h4>기획 계기</h4>
+                        <ul class="content-img">
+                          <li class="item event-grow">
+                            <img src="./images/prj/prj_07_01.jpg" alt="냉장고 요정 미미 : 상세보기 1">
+                          </li>
+                          <li class="item event-grow">
+                            <img src="./images/prj/prj_07_02.jpg" alt="냉장고 요정 미미 : 상세보기 2">
+                          </li>
+                          <li class="item event-grow">
+                            <img src="./images/prj/prj_07_03.jpg" alt="냉장고 요정 미미 : 상세보기 3">
+                          </li>
+                          <li class="item event-grow">
+                            <img src="./images/prj/prj_07_04.jpg" alt="냉장고 요정 미미 : 상세보기 4">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="item event delay-2">
+                    <div class="content-sub-header">
+                      <h2 class="sub-title">이북저북 : 전자 도서 사이트</h2>
+                    </div>
+                    <div class="content-sub-body">
+                      <div class="content-img content-main-img">
+                        <img src="./images/prj/prj_06.jpg" alt="이북저북 : 전자 도서 사이트">
+                        <a href="./detail/projectEBook.html" class="more">
+                          <p>상세보기</p>
+                        </a>
+                      </div>
+
+                      <div class="content-text">
+                        <h4>기획 계기</h4>
+                        <p>
+                          현대 사회에 접어들면서 수많은 편리한 통신기기들과 매체들이 등장하여 종이책의 입지는 점점 줄어들고 있습니다. 
+                          도서관이나 서점에서 직접 찾아가서 종이책을 구매/대여하는 번거로운 과정을 생략하여 어디서든 책을 읽는 간편함을 추구하여 대세로 자리 잡은 전자책을 찾는 소비자들의 편의를 위해 기획하게 되었습니다.
+                        </p>
+                        <h4>소요 기간</h4>
+                        <p>2022.12 ~ 2023.01 (약 2개월 소요)</p>
+                        <h4>주요 역할</h4>
+                        <p>총괄 / 기획 / 디자인 / 프론트 / 백엔드</p>
+                      </div>
+
+                      <div class="content-sub-img">
+                        <h4>기획 계기</h4>
+                        <ul class="content-img">
+                          <li class="item event-grow">
+                            <img src="./images/prj/prj_06_01.jpg" alt="이북저북 : 상세보기 1">
+                          </li>
+                          <li class="item event-grow">
+                            <img src="./images/prj/prj_06_02.jpg" alt="이북저북 : 상세보기 2">
+                          </li>
+                          <li class="item event-grow">
+                            <img src="./images/prj/prj_06_03.jpg" alt="이북저북 : 상세보기 3">
+                          </li>
+                          <li class="item event-grow">
+                            <img src="./images/prj/prj_06_04.jpg" alt="이북저북 : 상세보기 4">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="content">
+              <div class="content-header">
+                <h2 class="title">Project - Free</h2>
+                <p class="sub-title">개인적으로 작업한 프로젝트 입니다.</p>
+              </div>
+              <div class="content-body">
+                <ul class="project-free">
+                  <li class="item event delay-1 event-up">
+                    <div class="content-img">
+                      <img src="./images/prj/prj_01.jpg" alt="프로젝트 - 유니즈">
+                      <a class="item-link" href="https://animated-truffle-b40c6e.netlify.app" target="_blank" rel="noopener noreferrer">유니즈 뮤직 사이트</a>
+                    </div>
+                  </li>
+                  <li class="item event delay-2 event-up">
+                    <div class="content-img">
+                      <img src="./images/prj/prj_02.jpg" alt="프로젝트 - 2PM">
+                      <a class="item-link" href="https://chic-biscotti-dc6847.netlify.app" target="_blank" rel="noopener noreferrer">2PM 공식 사이트</a>
+                    </div>
+                  </li>
+                  <li class="item event delay-3 event-up">
+                    <div class="content-img">
+                      <img src="./images/prj/prj_03.jpg" alt="프로젝트 - MOVECINE">
+                      <a class="item-link" href="javascript:void(0)">MOVECINE (업로드 예정)</a>
+                    </div>
+                  </li>
+                  <li class="item event delay-4 event-up">
+                    <div class="content-img">
+                      <img src="./images/prj/prj_04.jpg" alt="프로젝트 - Starbucks">
+                      <a class="item-link" href="https://clinquant-pavlova-c8e9da.netlify.app" target="_blank" rel="noopener noreferrer">Starbucks</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- project -->
+
+    <!-- footer -->
+    <footer class="footer-component">
+      <div class="footer-content">
+        <div class="container">
+          <div class="footer">
+            <h1 class="title">JI YUN LEE PORTFOLIO</h1>
+            <h3 class="title"><b>새로운 도전</b>과 <b>경험</b>을 중시하는 <b>이지윤</b>의 포트폴리오를 봐주셔서 감사합니다.</h3>
+            <div class="item">
+              <a class="link" href="https://github.com/jylee22" target="_blank">https://github.com/jylee22</a>
+              <a class="link" href="https://jylee22.tistory.com/" target="_blank">https://jylee22.tistory.com</a>
+            </div>
+            <small>ⓒCopyright 2023 JI YUN LEE PORTFOLIO</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- top -->
+    <div id="top" class="to-top event-top">
+      <span class="icon material-symbols-outlined">arrow_upward</span>
+    </div>
+    <!-- top -->
+  </div>
+
+</body>
+</html>

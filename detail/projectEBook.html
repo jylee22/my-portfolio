@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JI YUN LEE PORTFOLIO</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Racing+Sans+One&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="icon" href="../favicon.svg">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/detail.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- js -->
+  <script src="../js/common.js"></script>
+  <script defer src="../js/main.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header-component">
+      <div class="header-content">
+        <div class="header">
+          <a href=".././">
+            <h1 class="logo">JI YUN LEE PORTFOLIO</h1>
+          </a>
+          <a id="back" class="to-back" href=".././">
+            <span class="event-left icon material-symbols-outlined">arrow_back</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <!-- detail -->
+    <section class="detail-component">
+      <div class="detail-content">
+        <div class="container">
+          <div class="content-header">
+            <h2 class="title">Project - Academy</h2>
+            <p class="sub-title">자바 파이썬을 활용한 머신러닝 SW개발자 과정에서 제작된 팀프로젝트 결과물입니다.</p>
+          </div>
+
+          <div class="tab">
+            <ul class="tab-nav">
+              <li class="tab-item">
+                <a href="#tab1">냉장고 요정 미미</a>
+              </li>
+              <li class="tab-item">
+                <a href="#tab2" class="active">이북저북</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <!-- tab1 -->
+              <div id="tab1" class="detail">
+                <div class="content">
+                  <div class="content-sub-header">
+                    <h2 class="sub-title">냉장고 요정 미미 : 메뉴 추천 및 레시피</h2>
+                  </div>
+                  <div class="content-sub-body">
+                    <div class="content-img">
+                      <img src="../images/prj/prj_07.jpg" alt="냉장고 요정 미미 : 메뉴 추천 및 레시피">
+                    </div>
+
+                    <div class="content-text">
+                      <h4>기획 계기</h4>
+                      <p> “오늘 뭐 먹지?” 식사 메뉴를 선정하는 것에 대해 많은 고민을 가지고 있습니다. 그리고 날씨와 시간에 따라 먹고 싶은 메뉴가 변하기도 하고 배달 음식도 질릴 때가 있을 겁니다. 집에 있는 재료로 식사 메뉴를 추천해주는 프로그램이 있으면 어떨까?
+                        집에 있는 냉장고 속 재료로 메뉴를 추천해 레시피를 알려주고 맛있는 한 끼와 메뉴 고민을 단 한번에 해결을 위해 기획했습니다.</p>
+                      <h4>소요 기간</h4>
+                      <p>2022.12 ~ 2023.01 (약 2개월 소요)</p>
+                      <h4>주요 역할</h4>
+                      <p>총괄 / 기획 / 디자인 / 프론트</p>
+                      <h4>적용 기술</h4>
+                      <p>HTML, CSS & SCSS, React + React bootstrap, Python, Node.js, Spting Boot, Maria DB, Gradle, selenium</p>
+                    </div>
+
+                    <div class="content-group">
+                      <div class="content-text">
+                        <h4>첫화면 - 로그인</h4>
+                        <p>로그인 : 회원가입을 해야 로그인을 할 수 있습니다.</p>
+                        <p>회원가입 : 이름, 이메일, 비밀번호를 입력하여 회원가입 합니다.</p>
+                        <p>비밀번호 찾기 : 비밀번호를 잊어 버렸을 경우 해당 이메일을 통해 비밀번호를 찾을 수 있습니다.</p>
+                      </div>
+  
+                      <div class="content-img">
+                        <img src="../images/prj/prj_07.jpg" alt="냉장고 요정 미미 : 메뉴 추천 및 레시피">
+                      </div>
+                    </div>
+                    
+                    <div class="content-group">
+                      <div class="content-text">
+                        <h4>인벤토리 화면</h4>
+                        <p>인벤토리는 냉장/냉동/실온의 저장소가 있습니다. 화면의 + 버튼 클릭 시 재료를 추가 할 수 있습니다.</p>
+                        <p>재료 추가 시 저장소/등록일/유통기한을 입력 후 등록하면 저장소에 재료가 추가됩니다.</p>
+                        <p>재료는 원하는 재료를 검색 후 추가할 수 있습니다.</p>
+                        <p>등록된 재료 선택 시 해당 재료관련 상세 정보를 확인할 수 있습니다.</p>
+                        <p>오른쪽 영역에는 날씨/기온/날짜/시간이 나타나며, 이에 따라 메뉴를 추천해줍니다. 메뉴는 3개 정도 나타납니다.</p>
+                        <p>※ 재료와 상세정보 데이터는 selenium를 통해 크롤링하여 수집했습니다.</p>
+                      </div>
+  
+                      <div class="content-img">
+                        <img src="../images/prj/prj_07_02.jpg" alt="냉장고 요정 미미 : 상세보기 2">
+                      </div>
+                    </div>
+
+                    <div class="content-group">
+                      <div class="content-text">
+                        <h4>재료 상세보기 화면</h4>
+                          <p>인벤토리에 등록된 재료를 선택하면 재료에 대한 상세 정보를 볼 수 있습니다.</p>
+                          <p>영양성분과 재료 관련해서 추천해주는 메뉴를 확인할 수 있습니다.</p>
+                          <p>재료를 수동으로 제거 해야하는 불편함이 있습니다.</p>
+                          <p>추천 메뉴를 선택하면 레시피 상세 화면으로 이동합니다.</p>
+                      </div>
+  
+                      <div class="content-img">
+                        <img src="../images/prj/prj_07_03.jpg" alt="냉장고 요정 미미 : 상세보기 3">
+                      </div>
+                    </div>
+
+                    <div class="content-group">
+                      <div class="content-text">
+                        <h4>레시피 목록 화면</h4>
+                        <p>화면의 상단의 레시피 아이콘을 클릭하면 레시피 목록으로 이동합니다.</p>
+                        <p>레시피 목록은 등록된 모든 메뉴를 확인할 수 있습니다.</p>
+                        <p>그리고 최근에 확인한 레시피를 최대 5개까지 확인할 수 있습니다.</p>
+                        <p>메뉴를 선택하면 레시피 상세 화면으로 이동합니다.</p>
+                      </div>
+  
+                      <div class="content-img">
+                        <img src="../images/prj/prj_07_04.jpg" alt="냉장고 요정 미미 : 상세보기 4">
+                      </div>
+                    </div>
+
+                    <div class="content-group">
+                      <div class="content-text">
+                        <h4>냉장고 알림 기능과 냉장고 변경 기능</h4>
+                        <p>냉장고 알림 : 냉장고 생성 시 설정한 유통기한의 기준으로 앞 뒤로 5일정도 알림을 보여줍니다. 
+                        알림에서 재료를 제거하면 냉장고 인벤토리에서 재료가 제거됩니다.</p>
+                        <p>냉장고 변경:
+                          냉장고가 1개 이상인 경우 다른 냉장고로 변경을 할 수 있습니다.
+                          홈에서가 아닌 다른 화면에서도 언제든지 이동할 수 있습니다.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- tab1 -->
+
+              <!-- tab2 -->
+              <div id="tab2" class="detail active">
+                <div class="content">
+                  <div class="content-sub-header">
+                    <h2 class="sub-title">이북저북 : 전자 도서 사이트</h2>
+                  </div>
+                  <div class="content-sub-body">
+                    <div class="content-img">
+                      <img src="../images/prj/prj_06.jpg" alt="이북저북 : 전자 도서 사이트">
+                    </div>
+
+                    <div class="content-text">
+                      <h4>기획 계기</h4>
+                      <p> 
+                        현대 사회에 접어들면서 수많은 편리한 통신기기들과 매체들이 등장하여 종이책의 입지는 점점 줄어들고 있습니다. 
+                        도서관이나 서점에서 직접 찾아가서 종이책을 구매/대여하는 번거로운 과정을 생략하여 어디서든 책을 읽는 간편함을 추구하여 대세로 자리 잡은 전자책을 찾는 소비자들의 편의를 위해 기획하게 되었습니다.  
+                      </p>
+                      <h4>소요 기간</h4>
+                      <p>2022.10 ~ 2022.11 (약 1개월 소요)</p>
+                      <h4>주요 역할</h4>
+                      <p>총괄 / 기획 / 디자인 / 프론트</p>
+                      <h4>적용 기술</h4>
+                      <p>HTML, CSS, js, bootstrap, jQuery, JSP, Spting, MyBatis, Oracle</p>
+                    </div>
+
+                    <div class="content-group">
+                      <div class="content-text">
+                        <h4>첫화면 - 홈 화면</h4>
+                        <p>로그인 : 회원가입을 해야 로그인을 할 수 있습니다. 로그인 후 페이지 이용이 가능합니다.</p>
+                        <p>회원가입 : 이름, 이메일, 비밀번호를 입력하여 회원가입 합니다.</p>
+                        <p>구독 : 구독을 통해 도서 무제한 이용할 수 있습니다.</p>
+                        <p>마이페이지 : 회원정보 수정할 수 있고, 회원 탈퇴를 할 수 있습니다.</p>
+                      </div>
+  
+                      <div class="content-img">
+                        <img src="../images/prj/prj_06.jpg" alt="이북저북 : 전자 도서 사이트">
+                      </div>
+                    </div>
+                    
+                    <div class="content-group">
+                      <div class="content-text">
+                        <h4>도서 화면</h4>
+                        <p>도서 화면은 로그인을 통해서 이동할 수 있습니다.</p>
+                        <p>도서 API를 통해 도서 목록과 정보를 불러오고 있습니다.</p>
+                      </div>
+  
+                      <div class="content-img">
+                        <img src="../images/prj/prj_06_01.jpg" alt="이북저북 : 상세보기 1">
+                      </div>
+                    </div>
+                    
+                    <div class="content-group">
+                      <div class="content-text">
+                        <h4>도서 상세보기 화면</h4>
+                        <p>기본 도서 정보를 확인할 수 있습니다.</p>
+                        <p>도서 상세보기에서 내서재 버튼 클릭 시 내서재에서 언제든지 책을 읽을 수 있습니다.</p>
+                      </div>
+                      
+                      <div class="content-img">
+                        <img src="../images/prj/prj_06_02.jpg" alt="이북저북 : 상세보기 2">
+                      </div>
+                    </div>
+
+                    <div class="content-group">
+                      <div class="content-text">
+                        <h4>마이페이지</h4>
+                        <p>마이페이지에서 회원 정보 수정할 수 있습니다.</p>
+                        <p>내서재에는 등록한 모든 책들의 목록들이 나타납니다.</p>
+                      </div>
+  
+                      <div class="content-img">
+                        <img src="../images/prj/prj_06_03.jpg" alt="이북저북 : 상세보기 3">
+                      </div>
+                    </div>
+
+                    <div class="content-group">
+                      <div class="content-text">
+                        <h4>새소식 화면</h4>
+                        <p>새소식 메뉴에서 공지사항, Q&A, 커뮤니티, 도서요청을 통해서 다른 회원들과 소통을 할 수 있습니다.</p>
+                        <p>도서요청 : 보고싶은 도서가 도서가 없을 때 도서를 추가 요청할 수 있습니다.</p>
+                      </div>
+                      <div class="content-img">
+                        <img src="../images/prj/prj_06_04.jpg" alt="이북저북 : 상세보기 4">
+                      </div>
+                    </div>
+
+                    <div class="content-group">
+                      <div class="content-text">
+                        <h4>관리자 페이지</h4>
+                        <p>관리자 페이지를 통해서 회원관리, 구독관리, 도서관리, 요청관리, 메뉴관리 등 할 수 있습니다.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- tab2 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- detail -->
+
+    <!-- footer -->
+    <footer class="footer-component">
+      <div class="footer-content">
+        <div class="container">
+          <div class="footer">
+            <h1 class="title">JI YUN LEE PORTFOLIO</h1>
+            <h3 class="title"><b>새로운 도전</b>과 <b>경험</b>을 중시하는 <b>이지윤</b>의 포트폴리오를 봐주셔서 감사합니다.</h3>
+            <div class="item">
+              <a class="link" href="https://github.com/jylee22" target="_blank">https://github.com/jylee22</a>
+              <a class="link" href="https://jylee22.tistory.com/" target="_blank">https://jylee22.tistory.com</a>
+            </div>
+            <small>ⓒCopyright 2023 JI YUN LEE PORTFOLIO</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- top -->
+    <div id="top" class="to-top event-top">
+      <span class="icon material-symbols-outlined">arrow_upward</span>
+    </div>
+    <!-- top -->
+  </div>
+</body>
+</html>

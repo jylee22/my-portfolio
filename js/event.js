@@ -70,75 +70,229 @@ window.onload = function() {
     })
   });
 
+
   // event
   const eventEls = document.querySelectorAll(".event");
   eventEls.forEach(function(eventEl){
     new ScrollMagic.Scene({
       triggerElement: eventEl,
-      triggerHook: .8,
+      triggerHook: .5,
     })
     .setClassToggle(eventEl, 'show')
     .addTo(new ScrollMagic.Controller());
   });
 
   // media : menu
-  const headerEl = document.getElementById("header");
   const navEl = document.querySelector("nav");
   const menuEl = document.querySelector(".menu");
   const closeEl = document.querySelector(".close");
-  const mainEl = document.getElementById("main");
 
   menuEl.addEventListener("click", function(){
-    navEl.style.display = "flex";
+    navEl.classList.add("show");
   });
 
   closeEl.addEventListener("click", function(){
-    navEl.style.display = "none";
+    navEl.classList.remove("show");
   });
 
-  const mediaViewContentMax = window.matchMedia('all and (max-width: 767px)');
+  
 
-  mediaViewContentMax.addEventListener("change", function(){
-    if(mediaViewContentMax.matches){
-      headerEl.classList.add("mobile");
-      navEl.classList.add("mobile");
-      mainEl.style.paddingTop = "70px";
+  // media
+  const mediaViewContenMobile = window.matchMedia(`(max-width: 992px)`);
+  const mediaViewContenMax960 = window.matchMedia(`(max-width: 960px)`);
+  const mediaViewContenMax920 = window.matchMedia(`(max-width: 929px)`);
+  const mediaViewContenMax760 = window.matchMedia(`(max-width: 769px)`);
+  const mediaViewContenMax700 = window.matchMedia(`(max-width: 706px)`);
+  const mediaViewContenMax680 = window.matchMedia(`(max-width: 689px)`);
+  const mediaViewContenMax620 = window.matchMedia(`(max-width: 629px)`);
+  const mediaViewContenMax560 = window.matchMedia(`(max-width: 569px)`);
+  const mediaViewContenMax480 = window.matchMedia(`(max-width: 489px)`);
+  const mediaViewContenMax370 = window.matchMedia(`(max-width: 379px)`);
 
-      goHome.addEventListener("click", function() {
-        gsap.to(window, 0.6, {
-          scrollTo: 0
-        })
-        navEl.style.display = "none";
-      });
-    
-      goProfile.addEventListener("click", function() {
-        gsap.to(window, 0.6, {
-          scrollTo: 828
-        })
-        navEl.style.display = "none";
-      });
-    
-      goSkill.addEventListener("click", function() {
-        gsap.to(window, 0.6, {
-          scrollTo: 3647
-        })
-        navEl.style.display = "none";
-      });
-    
-      goProject.addEventListener("click", function() {
-        gsap.to(window, 0.6, {
-          scrollTo: 6576
-        })
-        navEl.style.display = "none";
-      });
-
-    } else{
-      headerEl.classList.remove("mobile");
-      navEl.classList.remove("mobile");
-      mainEl.style.paddingTop = "0px";
-    }    
+  const wrapperEl = document.querySelector(".wrapper");
+  
+  window.addEventListener("scroll", function(){
+    console.log(window.scrollY);
   });
 
+  // mobile size > max-width: 992px
+  if(mediaViewContenMobile.matches === true) {
+    wrapperEl.classList.add("mobile");
+
+    goHome.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 0
+      })
+      navEl.classList.remove("show");
+    });
+  
+    goProfile.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 828
+      })
+      navEl.classList.remove("show");
+    });
+  
+    goSkill.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 2674
+      })
+      navEl.classList.remove("show");
+    });
+  
+    goProject.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 5283
+      })
+      navEl.classList.remove("show");
+    });
+  } else{
+    wrapperEl.classList.remove("mobile");
+  }
+  
+  // max-width: 960px
+  if(mediaViewContenMax960.matches === true) {
+
+    goSkill.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 3090
+      })
+      navEl.classList.remove("show");
+    });
+  
+    goProject.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 5699
+      })
+      navEl.classList.remove("show");
+    });
+
+  }
+
+  // max-width: 929px
+  if(mediaViewContenMax920.matches === true){
+  
+    goProject.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 5859
+      })
+      navEl.classList.remove("show");
+    });
+
+  }
+
+  // max-width: 769px
+  if(mediaViewContenMax760.matches === true){
+
+    goSkill.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 3647
+      })
+      navEl.classList.remove("show");
+    });
+
+    goProject.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 6576
+      })
+      navEl.classList.remove("show");
+    });
+
+  } 
+
+  // max-width: 706px
+  if(mediaViewContenMax700.matches === true){
+
+    goProject.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 6762
+      })
+      navEl.classList.remove("show");
+    });
+
+  } 
+
+  // max-width: 689px
+  if(mediaViewContenMax680.matches === true){
+
+    goSkill.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 3673
+      })
+      navEl.classList.remove("show");
+    });
+
+    goProject.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 6922
+      })
+      navEl.classList.remove("show");
+    });
+
+  } 
+
+  // max-width: 629px
+  if(mediaViewContenMax620.matches === true){
+
+    goSkill.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 3677
+      })
+      navEl.classList.remove("show");
+    });
+
+    goProject.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 7086
+      })
+      navEl.classList.remove("show");
+    });
+
+
+  } 
+  // max-width: 560px
+  if(mediaViewContenMax560.matches === true){
+
+    goProject.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 7406
+      })
+      navEl.classList.remove("show");
+    });
+
+  }
+
+  // max-width: 489px
+  if(mediaViewContenMax480.matches === true){
+
+    goProject.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 9006
+      })
+      navEl.classList.remove("show");
+    });
+
+  } 
+
+  // max-width: 379px
+  if(mediaViewContenMax370.matches === true){
+
+    goSkill.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 3589
+      })
+      navEl.classList.remove("show");
+    });
+
+    goProject.addEventListener("click", function() {
+      gsap.to(window, 0.6, {
+        scrollTo: 8933
+      })
+      navEl.classList.remove("show");
+    });
+
+  } 
+  
 
   // scroll top
   const clickTop = document.getElementById("top");

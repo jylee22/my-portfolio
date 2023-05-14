@@ -1,12 +1,19 @@
 @charset "UTF-8";
 
-@media all and (max-width: 1400px){
+/* 테블릿 */
+@media all and (max-width: 1399px){
   .container{
     width: 100%;
     padding: 0 60px;
   }
 
   /* content */
+  .about-me .item{
+    justify-content: flex-start !important;
+  }
+  .about-me .item span:last-child{
+    text-align: left;
+  }
   .education, .career, .activity, .certificate{
     width: 100%;
   }
@@ -32,7 +39,7 @@
   }
 }
 
-@media all and (max-width: 1200px){
+@media all and (max-width: 1199px){
   /* project-company */
   .project-company .item{
     flex-direction: column;
@@ -58,6 +65,7 @@
   }
   .project-academy .content-img{
     flex-wrap: wrap;
+    width: 100%;
   }
   .project-academy .content-img .item{
     width: 300px;
@@ -68,7 +76,57 @@
   }
 }
 
-@media all and (max-width: 969px){
+/* 모바일 */
+@media all and (max-width: 992px){
+  .mobile #header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+  }
+  .mobile nav.show{
+    display: flex;
+  }
+  .mobile nav{
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    display: none;
+    z-index: 10;
+  }
+  .mobile .close{
+    display: flex;
+  }
+  .mobile .close .icon{
+    margin-left: auto;
+  }
+  .mobile nav .nav-item{
+    line-height: 4;
+  }
+  .mobile nav .text{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  .mobile nav .text small{
+    font-size: 12px;
+  }
+  .mobile #main{
+    padding-top: 70px;
+  }
+
+  /* skill */
+  .skill > li{
+    flex: 0 0 100%;
+  }
+}
+
+@media all and (max-width: 968px){
   /* content */
   .about-me .content .content-body .content-img{
     text-align: center;
@@ -79,6 +137,21 @@
   .about-me .content:last-child {
     flex: 0 0 100%;
     margin-top: 60px;
+  }
+
+  /* project */
+  .project-academy > .item {
+    padding: 30px;
+  }
+  .project-academy .content-text {
+    padding: 20px 0;
+  }
+  .project-academy .content-sub-img {
+    padding: 0;
+    margin-top: 0;
+  }
+  .project-academy .content-text p {
+    line-height: 1.2;
   }
 
   /* project-free */
@@ -93,28 +166,30 @@
   }
 }
 
-@media all and (max-width: 767px){
+@media all and (max-width: 769px){
   h1.title{
     font-size: 60px;
   }
   
-    /*  */
-    .profile .item span:first-child,
-    .profile .item span:nth-child(2),
-    .profile .item span:last-child{
-      flex: 1;
-    }
-    .profile .item span:first-child{
-      font-weight: 500;
-      font-size: 16px;
-    }
-    .profile .item span{
-      text-align: left !important;
-    }
+  /* profile */
+  .profile .item span:first-child,
+  .profile .item span:nth-child(2),
+  .profile .item span:last-child{
+    flex: 1;
+  }
+  .profile .item span:first-child{
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .profile .item span{
+    text-align: left !important;
+  }
 
   /* about-me */
   .about-me .item span:first-child{
     font-size: 24px;
+
+    flex: 0 0 24px;
   }
 
   /* education */
@@ -145,17 +220,72 @@
   }
 }
 
-@media all and (min-width: 767px){
-  .mobile{
-    display: none;
+@media all and (max-width: 489px){
+  .container{
+    padding: 0 40px;
+  }
+
+  /* main */
+  h1.title {
+    font-size: 40px;
+  }
+
+  /* profile */
+  .profile > li{
+    padding: 0px;
+  }
+  .about-me .content-img img {
+    width: 240px;
+  }
+  .about-me b{
+    font-size: 26px;
+  }
+  .about-me h3 {
+    font-size: 22px;
+  }
+
+  /* skill */
+  .skill .content .content-img li{
+    flex: 0 0 100%;
+    margin: auto;
+  }
+
+  /* footer */
+  .footer-component {
+    height: auto;
+  }
+  .footer .item{
+    flex-direction: column;
+  }
+  .footer h3 {
+    font-size: 18px;
+  }
+  .footer b {
+    font-size: 20px;
   }
 }
 
-@media all and (min-width: 520px){
-  h1.title{
-    font-size: 40px;
+@media all and (max-width: 379px){
+  /* main */
+  .main-content::before {
+    width: 200px;
   }
-  .container{
-    padding: 0 40px;
+  .main-content::after{
+    width: 200px;
+  }
+  h1.title {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .title:first-child::after{
+    margin-left: 0;
+  }
+  .main .title:last-child::before{
+    margin-right: 0;
+  }
+  /* component */
+  .component::after {
+    width: 200px;
   }
 }

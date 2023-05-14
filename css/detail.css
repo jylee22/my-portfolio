@@ -8,6 +8,9 @@
 }
 
 /* detail */
+.detail-component{
+  padding-top: 70px;
+}
 .detail-content{
   padding: 40px;
 }

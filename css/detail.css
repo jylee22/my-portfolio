@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+/* header */
+.header-component{
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
 /* detail */
 .detail-content{
   padding: 40px;

@@ -76,6 +76,13 @@
   }
 }
 
+@media all and (max-width: 1099px){
+  /* tour */
+  .tour .content-img img{
+    width: 100%;
+  }
+}
+
 /* 모바일 */
 @media all and (max-width: 992px){
   .mobile #header{

@@ -71,6 +71,13 @@
   .main_wr h1{font-size: 5rem;}
   .main_wr > p{font-size: 2rem;}
 
+  /* header */
+  header{
+    height: 6rem;
+  }
+  .wr_group{
+    padding-top: 6rem;
+  }
   /* form */
   .sec{padding: 5rem 4rem;}
   .main_wr{
@@ -170,6 +177,9 @@
 
 /* 420px : s */
 @media all and (max-width: 420px){
+  body{
+    font-size: 1.5rem;
+  }
   /* menu */
   .menu{
     width: 100%;
